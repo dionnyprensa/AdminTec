@@ -14,8 +14,6 @@ namespace AdminTec.Domain.Interfaces
 
         T GetById(int id);
 
-        IEnumerable<T> GetAll { get; }
-
-        void Commit();
+        ICollection<T> ToList { get; }
     }
 }

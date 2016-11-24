@@ -1,0 +1,5 @@
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.csprojResolveAssemblyReference.cache
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.pdb
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.pdb

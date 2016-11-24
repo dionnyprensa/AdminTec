@@ -40,13 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\MfpBN.cs" />
-    <Compile Include="Entities\MfpColor.cs" />
+    <Compile Include="Entities\Article.cs" />
+    <Compile Include="Entities\DetailVisit.cs" />
+    <Compile Include="Entities\Equipment.cs" />
     <Compile Include="Entities\Part.cs" />
+    <Compile Include="Entities\Request.cs" />
+    <Compile Include="Entities\Stock.cs" />
+    <Compile Include="Entities\Technician.cs" />
     <Compile Include="Entities\Toner.cs" />
+    <Compile Include="Entities\Visit.cs" />
+    <Compile Include="Enums\VisitType.cs" />
+    <Compile Include="Enums\TonerType.cs" />
+    <Compile Include="Enums\MachineType.cs" />
     <Compile Include="Interfaces\IMachine.cs" />
-    <Compile Include="Interfaces\IBnW.cs" />
-    <Compile Include="Interfaces\IColor.cs" />
     <Compile Include="Interfaces\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
