@@ -11,14 +11,16 @@ namespace AdminTec.Domain.Entities
         public string Code { get; set; }
         public long Target { get; set; }
         public Enums.TonerType TonerType { get; private set; }
+        public int ArticleId { get; set; }
+        public bool IsSoftDelete { get; set; }
 
         #endregion Propiedades
 
         public virtual ICollection<Equipment> RelatedEquipments { get; set; }
+        public virtual Article Article { get; set; }
 
         #region Estado
 
-        public bool IsSoftDelete { get; set; }
         public bool IsActive { get; set; }
         public byte[] RowVersion { get; set; }
 

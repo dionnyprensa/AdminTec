@@ -2,7 +2,7 @@
 
 namespace AdminTec.Domain.Entities
 {
-    public class Request<T> where T : class
+    public class Request
     {
         #region Propiedades
 
@@ -14,7 +14,7 @@ namespace AdminTec.Domain.Entities
 
         #region Propiedades Virtuales
 
-        public virtual T Entity { get; set; }
+        //public virtual T Entity { get; set; }
 
         #endregion Propiedades Virtuales
 

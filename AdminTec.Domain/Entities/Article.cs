@@ -1,20 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace AdminTec.Domain.Entities
 {
-    public class Article<T> where T : class
+    public class Article
     {
         #region Propiedades
 
         public int Id { get; set; }
-        public int Count { get; set; }
-        public int Remaining { get; set; }
+        public int Quantity { get; set; }
+        public DateTime Date { get; set; }
 
         #endregion Propiedades
 
         #region Propiedades Virtuales
 
-        public virtual T Entity { get; set; }
+        public virtual ICollection<Equipment> Equipments { get; set; }
+        public virtual ICollection<Toner> Toners { get; set; }
+        public virtual ICollection<Part> Parts { get; set; }
+        public virtual Stock Stock { get; set; }
 
         #endregion Propiedades Virtuales
 

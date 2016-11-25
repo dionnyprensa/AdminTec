@@ -25,3 +25,5 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\De
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.pdb
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.pdb

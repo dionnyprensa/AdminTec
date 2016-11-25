@@ -4,16 +4,16 @@ namespace AdminTec.Domain.Interfaces
 {
     public interface IRepository<T> where T : class
     {
-        void Create(T entity);
+        void Add(T entity);
 
         void Update(T entity);
 
-        void Delete(T entity);
+        void Remove(T entity);
 
-        T Get(T entity);
+        T Find(T entity);
 
-        T GetById(int id);
+        T FindById(int id);
 
-        ICollection<T> ToList { get; }
+        IEnumerable<T> ToList { get; }
     }
 }

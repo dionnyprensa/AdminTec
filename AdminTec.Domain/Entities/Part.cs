@@ -12,10 +12,12 @@ namespace AdminTec.Domain.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public long Target { get; set; }
+        public int ArticleId { get; set; }
 
         #endregion Propiedades
 
         public virtual ICollection<Equipment> RelatedEquipments { get; set; }
+        public virtual Article Article { get; set; }
 
         #region Estado
 

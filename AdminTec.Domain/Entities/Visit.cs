@@ -10,6 +10,9 @@ namespace AdminTec.Domain.Entities
         public int Id { get; set; }
         public Enums.VisitType VisitType { get; set; }
 
+        public int EquipmentId { get; set; }
+        public int TechnicianId { get; set; }
+
         #endregion Propiedades
 
         #region Propiedades Virtuales
