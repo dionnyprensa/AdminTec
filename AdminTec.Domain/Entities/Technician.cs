@@ -10,7 +10,6 @@ namespace AdminTec.Domain.Entities
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public bool IsSoftDelete { get; set; }
         public string FullName { get { return string.Format("{0} {1}", FirstName, LastName); } }
 
         #endregion Propiedades
@@ -19,6 +18,7 @@ namespace AdminTec.Domain.Entities
 
         #region Estado
 
+        public bool IsSoftDelete { get; set; }
         public bool IsActive { get; set; }
         public byte[] RowVersion { get; set; }
 

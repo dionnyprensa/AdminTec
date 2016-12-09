@@ -46,12 +46,12 @@ namespace AdminTec.Infraestructure.Configurations
                 .IsRowVersion();
 
             HasMany(e => e.Parts)
-                .WithMany(p => p.RelatedEquipments)
+               .WithMany(p => p.Equipments)
                 .Map(ep =>
                 {
-                    ep.ToTable("EquipmentsParts");
                     ep.MapLeftKey("EquipmentId");
                     ep.MapRightKey("PartId");
+                    ep.ToTable("EquipmentsParts");
                 });
 
             HasMany(e => e.Toners)
@@ -63,9 +63,11 @@ namespace AdminTec.Infraestructure.Configurations
                     ep.MapRightKey("TonerId");
                 });
 
-            HasMany(e => e.Visits)
-                .WithRequired(v => v.Equipment)
-                .HasForeignKey(v => v.EquipmentId);
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
         }
     }
 }

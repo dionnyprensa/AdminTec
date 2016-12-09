@@ -12,14 +12,9 @@ namespace AdminTec.Domain.Entities
 
         #endregion Propiedades
 
-        #region Propiedades Virtuales
-
-        //public virtual T Entity { get; set; }
-
-        #endregion Propiedades Virtuales
-
         #region Estado
 
+        public bool IsComplete { get; set; }
         public bool IsSoftDelete { get; set; }
         public bool IsActive { get; set; }
         public byte[] RowVersion { get; set; }

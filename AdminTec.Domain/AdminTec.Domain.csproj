@@ -85,7 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Article.cs" />
+    <Compile Include="Entities\DetailStock.cs" />
     <Compile Include="Entities\DetailVisit.cs" />
     <Compile Include="Entities\Equipment.cs" />
     <Compile Include="Entities\Part.cs" />

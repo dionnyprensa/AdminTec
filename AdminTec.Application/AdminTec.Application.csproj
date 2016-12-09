@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,7 +44,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\EquipmentService.cs" />
+    <Compile Include="Concrete\ErrorMessage.cs" />
+    <Compile Include="Concrete\PartService.cs" />
+    <Compile Include="Concrete\RequestService.cs" />
+    <Compile Include="Concrete\StockService.cs" />
+    <Compile Include="Concrete\TechnicianService.cs" />
+    <Compile Include="Concrete\TonerService.cs" />
+    <Compile Include="Concrete\UserService.cs" />
+    <Compile Include="Concrete\VisitService.cs" />
+    <Compile Include="Interfaces\IEquipment.cs" />
+    <Compile Include="Interfaces\IPart.cs" />
+    <Compile Include="Interfaces\IRequest.cs" />
+    <Compile Include="Interfaces\IStock.cs" />
+    <Compile Include="Interfaces\ITechnician.cs" />
+    <Compile Include="Interfaces\IToner.cs" />
+    <Compile Include="Interfaces\IVisit.cs" />
+    <Compile Include="Interfaces\IAppService.cs" />
+    <Compile Include="Interfaces\IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validators\DetailStockValidator.cs" />
+    <Compile Include="Validators\DetailVisitValidator.cs" />
+    <Compile Include="Validators\EquipmentValidator.cs" />
+    <Compile Include="Validators\PartValidator.cs" />
+    <Compile Include="Validators\RequestValidator.cs" />
+    <Compile Include="Validators\StockValidator.cs" />
+    <Compile Include="Validators\TechnicianValidator.cs" />
+    <Compile Include="Validators\TonerValidator.cs" />
+    <Compile Include="Validators\UserValidator.cs" />
+    <Compile Include="Validators\VisitValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdminTec.Domain\AdminTec.Domain.csproj">
+      <Project>{75AA6F29-0628-472C-90E7-926A8CCA71FC}</Project>
+      <Name>AdminTec.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

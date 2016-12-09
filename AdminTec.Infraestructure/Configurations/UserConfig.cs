@@ -13,7 +13,7 @@ namespace AdminTec.Infraestructure.Configurations
                 .IsRequired();
 
             Property(u => u.FirstName)
-                .HasMaxLength(32)
+                .HasMaxLength(254)
                 .IsRequired();
 
             Property(u => u.LastName)
@@ -32,6 +32,12 @@ namespace AdminTec.Infraestructure.Configurations
 
             Property(u => u.RowVersion)
                 .IsRowVersion();
+
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
         }
     }
 }

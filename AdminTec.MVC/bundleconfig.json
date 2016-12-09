@@ -1,0 +1,50 @@
+[
+  {
+    "outputFileName": "Scripts/app.min.js",
+    "inputFiles": [
+      "Scripts/app.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/dropzone.min.js",
+    "inputFiles": [
+      "Scripts/dropzone.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/eventemitter2.min.js",
+    "inputFiles": [
+      "Scripts/eventemitter2.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jQuerySortable.min.js",
+    "inputFiles": [
+      "Scripts/jQuerySortable.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/mocha.min.js",
+    "inputFiles": [
+      "Scripts/mocha.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/modernizr-2.8.3.min.js",
+    "inputFiles": [
+      "Scripts/modernizr-2.8.3.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/quill.min.js",
+    "inputFiles": [
+      "Scripts/quill.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/TinyColor.min.js",
+    "inputFiles": [
+      "Scripts/TinyColor.js"
+    ]
+  }
+]

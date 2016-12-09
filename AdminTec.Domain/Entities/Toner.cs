@@ -7,17 +7,17 @@ namespace AdminTec.Domain.Entities
     {
         #region Propiedades
 
-        public int Id { get; set; }
+        public int TonerId { get; set; }
         public string Code { get; set; }
         public long Target { get; set; }
-        public Enums.TonerType TonerType { get; private set; }
-        public int ArticleId { get; set; }
+        public Enums.TonerType TonerType { get; set; }
+        public int StockId { get; set; }
         public bool IsSoftDelete { get; set; }
 
         #endregion Propiedades
 
         public virtual ICollection<Equipment> RelatedEquipments { get; set; }
-        public virtual Article Article { get; set; }
+        public virtual Stock Stock { get; set; }
 
         #region Estado
 

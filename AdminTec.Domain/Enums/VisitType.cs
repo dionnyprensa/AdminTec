@@ -19,7 +19,10 @@ namespace AdminTec.Domain.Enums
         [Description("Entranamiento Usuario")]
         UserTraining = 4,
 
-        [Description("Instalacion")]
-        Installation = 5
+        [Description("Instalación")]
+        Installation = 5,
+
+        [Description("Atasco")]
+        PaperJam = 6
     }
 }

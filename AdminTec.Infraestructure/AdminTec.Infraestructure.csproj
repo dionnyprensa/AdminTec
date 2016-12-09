@@ -87,18 +87,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configurations\ArticleConfig.cs" />
+    <Compile Include="Configurations\DetailStockConfig.cs" />
     <Compile Include="Configurations\EquipmentConfig.cs" />
     <Compile Include="Configurations\PartConfig.cs" />
+    <Compile Include="Configurations\RequestConfig.cs" />
     <Compile Include="Configurations\StockConfig.cs" />
     <Compile Include="Configurations\TechnicianConfig.cs" />
     <Compile Include="Configurations\TonerConfig.cs" />
     <Compile Include="Configurations\UserConfig.cs" />
     <Compile Include="Configurations\VisitConfig.cs" />
     <Compile Include="Context\AdminTecContext.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\ArticleRepository.cs" />
     <Compile Include="Repositories\PartRepository.cs" />
+    <Compile Include="Repositories\RequestRepository.cs" />
     <Compile Include="Repositories\StockRepository.cs" />
     <Compile Include="Repositories\TechnicianRepository.cs" />
     <Compile Include="Repositories\TonerRepository.cs" />
@@ -111,7 +113,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\AdminTec.Domain\AdminTec.Domain.csproj">
       <Project>{75aa6f29-0628-472c-90e7-926a8cca71fc}</Project>

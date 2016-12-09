@@ -1,9 +1,6 @@
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.csprojResolveAssemblyReference.cache
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.dll.config
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.pdb
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.dll
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.pdb
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\AdminTec.Domain.dll.config
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\EntityFramework.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\EntityFramework.SqlServer.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
@@ -25,3 +22,6 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Micro
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Newtonsoft.Json.xml
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.csprojResolveAssemblyReference.cache
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.pdb

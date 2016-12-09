@@ -1,6 +1,7 @@
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.dll.config
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.pdb
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\EntityFramework.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\EntityFramework.SqlServer.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Core.dll
@@ -12,6 +13,7 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\De
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.OAuth.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\Newtonsoft.Json.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\Owin.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.pdb
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\EntityFramework.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\EntityFramework.SqlServer.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Core.xml
@@ -25,5 +27,3 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\De
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.pdb
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.dll
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.pdb

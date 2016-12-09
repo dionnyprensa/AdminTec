@@ -9,7 +9,7 @@ namespace AdminTec.Domain.Entities
 
         public int Id { get; set; }
         public string SerialNumber { get; set; }
-        public Enums.MachineType TypeMachine { get; private set; }
+        public Enums.MachineType TypeMachine { get; set; }
         public string Model { get; set; }
         public string Location { get; set; }
         public string IP { get; set; }
@@ -17,8 +17,7 @@ namespace AdminTec.Domain.Entities
         public long CounterBnWPrints { get; set; }
         public long CounterColorCopies { get; set; }
         public long CounterColorPrints { get; set; }
-        public bool IsSoftDelete { get; set; }
-        public int ArticleId { get; set; }
+        public int StockId { get; set; }
 
         #endregion Propiedades
 
@@ -27,12 +26,13 @@ namespace AdminTec.Domain.Entities
         public virtual ICollection<Part> Parts { get; set; }
         public virtual ICollection<Toner> Toners { get; set; }
         public virtual ICollection<Visit> Visits { get; set; }
-        public virtual Article Article { get; set; }
+        public virtual Stock Stock { get; set; }
 
         #endregion Propiedades Virtuales
 
         #region Estado
 
+        public bool IsSoftDelete { get; set; }
         public bool IsActive { get; set; }
         public byte[] RowVersion { get; set; }
 

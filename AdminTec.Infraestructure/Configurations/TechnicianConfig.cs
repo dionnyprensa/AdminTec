@@ -29,6 +29,12 @@ namespace AdminTec.Infraestructure.Configurations
             Property(t => t.RowVersion)
                 .IsRowVersion();
 
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
+
         }
     }
 }

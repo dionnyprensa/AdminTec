@@ -21,15 +21,20 @@ namespace AdminTec.Infraestructure.Configurations
 
             HasRequired(v => v.Technician)
                 .WithMany(t => t.Visits)
-                .HasForeignKey(v => v.Technician);
+                .HasForeignKey(v => v.TechnicianId);
 
             HasMany(v => v.DetailsVisit)
                 .WithRequired(dv => dv.Visit)
-                .HasForeignKey(v => v.VisitId)
-                .WillCascadeOnDelete(true);
+                .HasForeignKey(v => v.VisitId);
 
-            Property(s => s.RowVersion)
+            Property(v => v.RowVersion)
                 .IsRowVersion();
+
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
         }
     }
 }

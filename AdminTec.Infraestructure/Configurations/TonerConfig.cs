@@ -9,9 +9,9 @@ namespace AdminTec.Infraestructure.Configurations
         {
             ToTable("Toners");
 
-            HasKey(t => t.Id);
+            HasKey(t => t.TonerId);
 
-            Property(t => t.Id)
+            Property(t => t.TonerId)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
                 .HasColumnName("Id");
 
@@ -26,6 +26,12 @@ namespace AdminTec.Infraestructure.Configurations
 
             Property(e => e.RowVersion)
                 .IsRowVersion();
+
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
         }
     }
 }

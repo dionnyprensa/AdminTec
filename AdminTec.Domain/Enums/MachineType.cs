@@ -10,10 +10,16 @@ namespace AdminTec.Domain.Enums
         [Description("Multifuncional a Color")]
         Color = 1,
 
-        [Description("Impresora")]
-        Printer = 2,
+        [Description("Impresora a Color")]
+        PrinterColor = 2,
 
-        [Description("Copiadora")]
-        Copier = 3
+        [Description("Impresora a Blanco y Negro")]
+        PrinterBnW = 3,
+
+        [Description("Copiadora a Color")]
+        CopierColor = 4,
+
+        [Description("Copiadora a Blanco y Negro")]
+        CopierBnW = 5
     }
 }

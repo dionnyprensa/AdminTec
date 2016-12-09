@@ -15,17 +15,33 @@ namespace AdminTec.Infraestructure.Configurations
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
                 .HasColumnName("Id");
 
-            Property(s => s.Quantity)
+            Property(s => s.QuantityInInStock)
                 .IsRequired();
 
-            Property(s => s.Used)
+            Property(s => s.QuantityUsed)
                 .IsRequired();
-
-            HasRequired(s => s.Article)
-                .WithRequiredPrincipal(a => a.Stock);
 
             Property(s => s.RowVersion)
                 .IsRowVersion();
+
+            HasMany(s => s.DetailsStock)
+                .WithRequired(ds => ds.Stock)
+                .HasForeignKey(ds => ds.StockId);
+
+            HasOptional(s => s.Equipment)
+                .WithOptionalPrincipal(e => e.Stock);
+
+            HasOptional(s => s.Part)
+                .WithOptionalPrincipal(p => p.Stock);
+
+            HasOptional(s => s.Toner)
+                .WithOptionalPrincipal(t => t.Stock);
+
+            Property(v => v.CreatedAt)
+                .HasColumnType("datetime2");
+
+            Property(v => v.LastModified)
+                .HasColumnType("datetime2");
         }
     }
 }
