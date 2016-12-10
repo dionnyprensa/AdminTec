@@ -30,6 +30,7 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.MVC.p
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Application.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Domain.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Infraestructure.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Antlr3.Runtime.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\EntityFramework.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\EntityFramework.SqlServer.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -41,15 +42,18 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.Web.
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Newtonsoft.Json.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Helpers.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Mvc.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Optimization.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Razor.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Webpages.Deployment.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Webpages.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Webpages.Razor.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\WebActivatorEx.dll
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\WebGrease.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\FluentValidation.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Application.pdb
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Domain.pdb
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\AdminTec.Infraestructure.pdb
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Antlr3.Runtime.pdb
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\EntityFramework.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\EntityFramework.SqlServer.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
@@ -58,6 +62,7 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.Prac
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.Practices.Unity.Mvc.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Newtonsoft.Json.xml
+E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Optimization.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Razor.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Webpages.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Webpages.Deployment.xml
@@ -86,8 +91,3 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\zh-CN\FluentVa
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\obj\Debug\AdminTec.MVC.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\obj\Debug\AdminTec.MVC.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\obj\Debug\AdminTec.MVC.pdb
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Antlr3.Runtime.dll
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Optimization.dll
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\WebGrease.dll
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\Antlr3.Runtime.pdb
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.MVC\bin\System.Web.Optimization.xml

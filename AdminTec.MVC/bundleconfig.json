@@ -46,5 +46,83 @@
     "inputFiles": [
       "Scripts/TinyColor.js"
     ]
+  },
+  {
+    "outputFileName": "Content/app-blue.min.css",
+    "inputFiles": [
+      "Content/app-blue.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-custom.min.css",
+    "inputFiles": [
+      "Content/app-custom.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-green.min.css",
+    "inputFiles": [
+      "Content/app-green.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-seagreen.min.css",
+    "inputFiles": [
+      "Content/app-seagreen.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-red.min.css",
+    "inputFiles": [
+      "Content/app-red.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-purple.min.css",
+    "inputFiles": [
+      "Content/app-purple.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app-orange.min.css",
+    "inputFiles": [
+      "Content/app-orange.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/vendor.min.css",
+    "inputFiles": [
+      "Content/vendor.css"
+    ]
+  },
+  {
+    "outputFileName": "Content/app.min.css",
+    "inputFiles": [
+      "Content/app.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/vendor.min.js",
+    "inputFiles": [
+      "Scripts/vendor.js"
+    ]
+  },
+  {
+    "outputFileName": "Content/datepicker3.min.css",
+    "inputFiles": [
+      "Content/datepicker3.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/jquery.knob.min.js",
+    "inputFiles": [
+      "Scripts/jquery.knob.js"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/moment.min.js",
+    "inputFiles": [
+      "Scripts/moment.js"
+    ]
   }
 ]

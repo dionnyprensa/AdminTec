@@ -22,6 +22,5 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Micro
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\bin\Debug\Newtonsoft.Json.xml
-E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Domain\obj\Debug\AdminTec.Domain.pdb
