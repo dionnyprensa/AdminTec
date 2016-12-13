@@ -144,6 +144,8 @@
       <DependentUpon>datepicker3.css</DependentUpon>
     </Content>
     <Content Include="Content\daterangepicker.css" />
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\iCheck\all.css" />
     <Content Include="Content\iCheck\flat\aero%402x.png" />
     <Content Include="Content\iCheck\flat\aero.css" />
@@ -300,6 +302,8 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\bootstrap3-wysihtml5.all.js" />
     <Content Include="Scripts\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\dashboard.js" />
     <Content Include="Scripts\dashboard2.js" />
     <Content Include="Scripts\daterangepicker.js" />
@@ -319,6 +323,7 @@
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\morris.js" />
     <Content Include="Scripts\morris.min.js" />
+    <Content Include="Scripts\raphael.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
