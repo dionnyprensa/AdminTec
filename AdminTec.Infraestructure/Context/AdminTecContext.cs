@@ -16,7 +16,7 @@ namespace AdminTec.Infraestructure.Context
         public DbSet<DetailStock> DetailsStock { get; set; }
         public DbSet<Request> Requests { get; set; }
         public DbSet<Visit> Visits { get; set; }
-        public DbSet<DetailVisit> DetailsVisit { get; set; }
+        public DbSet<DetailsVisit> DetailsVisit { get; set; }
 
         public AdminTecContext() : base("AdminTecMSSQL")
         {
@@ -36,6 +36,8 @@ namespace AdminTec.Infraestructure.Context
             modelBuilder.Configurations.Add(new UserConfig());
             modelBuilder.Configurations.Add(new RequestConfig());
             modelBuilder.Configurations.Add(new StockConfig());
+            modelBuilder.Configurations.Add(new DetailsStockConfig());
+            modelBuilder.Configurations.Add(new DetailsVisitConfig());
         }
     }
 }

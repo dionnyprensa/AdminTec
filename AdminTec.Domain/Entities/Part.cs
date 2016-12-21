@@ -19,6 +19,7 @@ namespace AdminTec.Domain.Entities
         #region Propiedades Virtuales
 
         public virtual ICollection<Equipment> Equipments { get; set; }
+        public virtual ICollection<DetailsVisit> DetailsVisit { get; set; }
         public virtual Stock Stock { get; set; }
 
         #endregion Propiedades Virtuales

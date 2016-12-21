@@ -25,3 +25,30 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Application\bin\Debug\
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Application\obj\Debug\AdminTec.Application.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Application\obj\Debug\AdminTec.Application.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Application\obj\Debug\AdminTec.Application.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\AdminTec.Application.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\AdminTec.Application.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\AdminTec.Domain.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\FluentValidation.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\AdminTec.Domain.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\FluentValidation.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\FluentValidation.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\cs\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\da\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\de\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\es\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\fa\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\fi\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\fr\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\it\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\ko\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\mk\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\nl\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\pl\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\pt\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\ru\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\sv\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\tr\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\bin\Debug\zh-CN\FluentValidation.resources.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\obj\Debug\AdminTec.Application.csprojResolveAssemblyReference.cache
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\obj\Debug\AdminTec.Application.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Application\obj\Debug\AdminTec.Application.pdb

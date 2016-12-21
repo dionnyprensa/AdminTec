@@ -27,3 +27,32 @@ E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\bin\De
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.csprojResolveAssemblyReference.cache
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.dll
 E:\D\Desarrollo\Proyectos\Visual Studio\AdminTec\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.dll.config
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\AdminTec.Infraestructure.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\EntityFramework.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Owin.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\AdminTec.Domain.pdb
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\EntityFramework.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.csprojResolveAssemblyReference.cache
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.dll
+C:\Users\dprensa\Desktop\AdminTec-master\AdminTec.Infraestructure\obj\Debug\AdminTec.Infraestructure.pdb

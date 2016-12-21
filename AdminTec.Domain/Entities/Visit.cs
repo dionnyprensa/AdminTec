@@ -19,7 +19,7 @@ namespace AdminTec.Domain.Entities
 
         public virtual Equipment Equipment { get; set; }
         public virtual Technician Technician { get; set; }
-        public virtual ICollection<DetailVisit> DetailsVisit { get; set; }
+        public virtual ICollection<DetailsVisit> DetailsVisit { get; set; }
 
         #endregion Propiedades Virtuales
 

@@ -236,7 +236,7 @@ $(function () {
         xkey: 'y',
         ykeys: ['copias', 'impresiones', 'copiasBN', 'impresionesBN'],
         labels: ['Copias Color', 'Impresiones Color', 'Copias BN', 'Impresiones BN'],
-        barColors: ['#00a65a', '#ff5722', '#4289f4', '#e8dc06'],
+        barColors: ['#4289f4', '#e8dc06', '#00a65a', '#ff851b'],
         hideHover: 'auto'
     });
 

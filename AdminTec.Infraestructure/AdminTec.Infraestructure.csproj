@@ -87,7 +87,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configurations\DetailStockConfig.cs" />
+    <Compile Include="Configurations\DetailsStockConfig.cs" />
+    <Compile Include="Configurations\DetailsVisitConfig.cs" />
     <Compile Include="Configurations\EquipmentConfig.cs" />
     <Compile Include="Configurations\PartConfig.cs" />
     <Compile Include="Configurations\RequestConfig.cs" />

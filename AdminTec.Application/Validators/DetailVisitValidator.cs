@@ -3,9 +3,9 @@ using FluentValidation;
 
 namespace AdminTec.Application.Validators
 {
-    public class DetailVisitValidator : AbstractValidator<DetailVisit>
+    public class DetailsVisitValidator : AbstractValidator<DetailsVisit>
     {
-        public DetailVisitValidator()
+        public DetailsVisitValidator()
         {
             RuleFor(dv => dv.Comments)
                 .Length(0, 128).WithMessage("Maximo 128 carácteres.");
