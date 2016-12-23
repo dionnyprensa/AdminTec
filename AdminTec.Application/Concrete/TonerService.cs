@@ -15,12 +15,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<Toner> ToList
+        public IEnumerable<Toner> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(Toner entity)

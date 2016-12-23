@@ -13,7 +13,7 @@ namespace AdminTec.Application.Validators
                 .Length(min: 4, max: 16).WithMessage("El Código debe tener entre 4 y 16 letras.");
 
             RuleFor(e => e.Name)
-                .Matches(@"/[a-zA-Z ]+\w/g").WithMessage("Sólo se permiten letras.")
+                .Matches(@"^[a-zA-Z ]+\w$").WithMessage("Sólo se permiten letras.")
                 .NotNull().WithMessage("Nombre requerido.")
                 .NotEmpty().WithMessage("Nombre Requerido.")
                 .Length(min: 4, max: 32).WithMessage("El Nombre debe tener entre 4 y 32 letras.");

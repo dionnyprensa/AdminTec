@@ -1,0 +1,83 @@
+﻿@model PagedList.IPagedList<AdminTec.Domain.Entities.Equipment>
+@using PagedList.Mvc;
+
+@{
+    var x = 0;
+    ViewBag.Title = "Equipos";
+    ViewBag.SubSection = "Todos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles
+{
+
+}
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Listado de Equipos</h3>
+                    <div class="box-tools">
+                        <form action="/Equipments" method="get" class="form-inline" name="Search" style="width: 250px;">
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-btn">
+                                    <input type="button" onclick="window.location.href = '@Url.Action("Index", "Equipments")';" class="btn btn-default" value="Todos">
+                                </span>
+                                <input type="text" class="form-control" id="SearchMfp" placeholder="Buscar" name="SearchMfp" value="@{@ViewBag.CurrentFilter;}">
+                                <span class="input-group-btn">
+                                    <input type="submit" class="btn btn-default" value="Buscar">
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Serial</th>
+                                <th>Modelo</th>
+                                <th>Ubicación</th>
+                                <th>IP</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        @foreach (var item in Model.Select((value, index) => new { Value = value, Index = index }))
+                        {
+                            <tr>
+                                <td>@item.Index.ToString()</td>
+                                <td>@item.Value.SerialNumber.ToString()</td>
+                                <td>@item.Value.Model.ToString()</td>
+                                <td>@item.Value.Location.ToString()</td>
+                                <td><span class="label label-success">@item.Value.IP.ToString()</span></td>
+                                <td>
+                                    <a href="@Url.Action("Detalles", "Equipments", new { id = item.Value.Id })" class="btn btn-social-icon btn-sm bg-blue">
+                                    <i class="fa fa-eye"></i>
+                                    </a>
+                                    <a href="@Url.Action("Edit", "Equipments", new { id = item.Value.Id })" class="btn btn-social-icon btn-sm bg-yellow">
+                                        <i class="fa fa-pencil"></i>
+                                    </a>
+                                    <a href="@Url.Action("Delete", "Equipments", new { id = item.Value.Id })" class="btn btn-social-icon btn-sm bg-red-active">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            x++;
+                        }
+                    </table>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
+        </div>
+    </div>
+</section>
+<!-- /.content -->
+@section Scripts
+{
+
+}

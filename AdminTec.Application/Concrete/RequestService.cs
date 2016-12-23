@@ -15,12 +15,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<Request> ToList
+        public IEnumerable<Request> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(Request entity)

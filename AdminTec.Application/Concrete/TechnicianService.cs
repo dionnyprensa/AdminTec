@@ -15,12 +15,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<Technician> ToList
+        public IEnumerable<Technician> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(Technician entity)

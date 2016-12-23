@@ -1,5 +1,7 @@
 using AdminTec.Application.Concrete;
 using AdminTec.Application.Interfaces;
+using AdminTec.Domain.Interfaces;
+using AdminTec.Infraestructure.Repositories;
 using Microsoft.Practices.Unity;
 using System;
 
@@ -35,11 +37,7 @@ namespace AdminTec.MVC.App_Start
         /// change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
         public static void RegisterTypes(IUnityContainer container)
         {
-            // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
-            // container.LoadConfiguration();
-
-            // TODO: Register your types here
-            // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType(typeof(IRepository<>), typeof(TRepository<>));
             container.RegisterType<IEquipment, EquipmentService>();
             container.RegisterType<IPart, PartService>();
             container.RegisterType<IRequest, RequestService>();
@@ -47,7 +45,14 @@ namespace AdminTec.MVC.App_Start
             container.RegisterType<ITechnician, TechnicianService>();
             container.RegisterType<IToner, TonerService>();
             container.RegisterType<IUser, UserService>();
+            //container.RegisterType<IUser, UserService>("UserService");
             container.RegisterType<IVisit, VisitService>();
+
+            // NOTE: To load from web.config uncomment the line below. Make sure to add a Microsoft.Practices.Unity.Configuration to the using statements.
+            // container.LoadConfiguration();
+
+            // TODO: Register your types here
+            // container.RegisterType<IProductRepository, ProductRepository>();
         }
     }
 }

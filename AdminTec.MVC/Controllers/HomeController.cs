@@ -2,6 +2,7 @@
 
 namespace AdminTec.MVC.Controllers
 {
+    [Authorize()]
     public class HomeController : Controller
     {
         // GET: Home

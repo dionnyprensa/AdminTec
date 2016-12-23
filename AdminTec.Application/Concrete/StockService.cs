@@ -15,12 +15,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<Stock> ToList
+        public IEnumerable<Stock> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(Stock entity)

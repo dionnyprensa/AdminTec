@@ -15,12 +15,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<Visit> ToList
+        public IEnumerable<Visit> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(Visit entity)

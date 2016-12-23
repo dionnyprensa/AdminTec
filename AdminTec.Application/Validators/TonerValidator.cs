@@ -8,7 +8,7 @@ namespace AdminTec.Application.Validators
         public TonerValidator()
         {
             RuleFor(t => t.Code)
-                .Matches(@"/[a-zA-Z0-9]+/g").WithMessage("Solo letras y números.")
+                .Matches(@"^[a-zA-Z0-9]+$").WithMessage("Solo letras y números.")
                 .NotNull().WithMessage("Código requerido.")
                 .NotEmpty().WithMessage("Código requerido.");
 

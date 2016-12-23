@@ -1,4 +1,24 @@
-﻿.morris-hover {
+﻿input.input-validation-error {
+    background-color: indianred;
+    color: white;
+}
+
+input.input-validation-error:valid {
+    background-color: indianred;
+    color: white;
+}
+
+/*input.form-control.valid {
+    background-color: limegreen;
+    color: white;
+}
+
+input.form-control.valid:valid {
+    background-color: limegreen;
+    color: white;
+}*/
+
+.morris-hover {
     position: absolute;
     z-index: 1000;
 }

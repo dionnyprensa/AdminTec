@@ -27,6 +27,9 @@ namespace AdminTec.Infraestructure.Configurations
             Property(e => e.IP)
                 .IsRequired();
 
+            Property(e => e.PMInterval)
+                .IsRequired();
+
             Property(e => e.CounterBnWCopies)
                 .IsRequired();
 

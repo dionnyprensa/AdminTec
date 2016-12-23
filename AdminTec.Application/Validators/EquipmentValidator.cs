@@ -23,6 +23,10 @@ namespace AdminTec.Application.Validators
                 .NotEmpty().NotNull().WithMessage("{PropertyName} Requerida.")
                 .Length(4, 12).WithMessage("{PropertyValue} no es una dirección IP válida.");
 
+            RuleFor(e => e.PMInterval)
+                .GreaterThanOrEqualTo(0).WithMessage("El valor debe ser mayor a cero (0).")
+                .NotEmpty().NotNull().WithMessage("Valor requerido.");
+
             RuleFor(e => e.CounterBnWCopies)
                 .GreaterThanOrEqualTo(0).WithMessage("El valor debe ser mayor a cero (0).")
                 .NotEmpty().NotNull().WithMessage("Valor requerido.");

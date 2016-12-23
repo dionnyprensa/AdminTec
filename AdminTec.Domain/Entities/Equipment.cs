@@ -13,6 +13,7 @@ namespace AdminTec.Domain.Entities
         public string Model { get; set; }
         public string Location { get; set; }
         public string IP { get; set; }
+        public long PMInterval { get; set; }
         public long CounterBnWCopies { get; set; }
         public long CounterBnWPrints { get; set; }
         public long CounterColorCopies { get; set; }

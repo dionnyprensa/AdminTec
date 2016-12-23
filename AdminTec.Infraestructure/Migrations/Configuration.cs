@@ -5,7 +5,7 @@ namespace AdminTec.Infraestructure.Migrations
     using System;
     using System.Collections.Generic;
     using System.Data.Entity.Migrations;
-    using System.Security.Cryptography;
+    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Context.AdminTecContext>
     {
@@ -14,25 +14,16 @@ namespace AdminTec.Infraestructure.Migrations
             AutomaticMigrationsEnabled = true;
         }
 
-        public string hashear(string password)
-        {
-            byte[] salt;
-            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
-
-            var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 10000);
-            byte[] hash = pbkdf2.GetBytes(20);
-
-            byte[] hashBytes = new byte[36];
-            Array.Copy(salt, 0, hashBytes, 0, 16);
-            Array.Copy(hash, 0, hashBytes, 16, 20);
-
-            string savedPasswordHash = Convert.ToBase64String(hashBytes);
-
-            return password;
-        }
-
         protected override void Seed(Context.AdminTecContext context)
         {
+            byte[] Byte = System.Text.Encoding.UTF8.GetBytes("Asdf1234");
+            byte[] Key = Guid.NewGuid().ToByteArray();
+            string pass = Convert.ToBase64String(Byte.Concat(Key).ToArray());
+
+            pass = pass.Replace("+", "A");
+            pass = pass.Replace(@"\", "B");
+            pass = pass.Replace(@"/", "C");
+
             //context.Database.Initialize(true);
 
             //(@"USE [AdminTec]; EXEC sp_MSforeachtable @command1 = " + "'DBCC CHECKIDENT(''?'', RESEED, 0);" + "';");
@@ -44,7 +35,7 @@ namespace AdminTec.Infraestructure.Migrations
                     new User
                     {
                         UserName = "dprensa",
-                        Password = "asdf1234",
+                        Password = pass,
                         FirstName = "Dionny",
                         LastName = "Prensa",
                         RememberMe = false,

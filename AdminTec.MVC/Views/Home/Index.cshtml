@@ -1,0 +1,347 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Styles
+{
+}
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-green">
+                <div class="inner">
+                    <h3><span>76</span></h3>
+                    <p>Toners Restantes</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-paintbucket"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3><span>7</span></h3>
+                    <p>Proximos cambios de Toner</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-android-sync"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    <h3>12</h3>
+                    <p>Proximos PM's</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-settings"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red-active">
+                <div class="inner">
+                    <h3>1</h3>
+                    <p>MPF's Detenidas</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-printer"></i>
+                </div>
+                <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
+        <!-- ./col -->
+    </div>
+    <!-- /.row -->
+    <!-- Main row -->
+    <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+                <!-- Tabs within a box -->
+                <ul class="nav nav-tabs pull-right">
+                    <!--
+                        <li class="active"><a href="#revenue-chart" data-toggle="tab">Color</a></li>
+                        <li><a href="#sales-chart" data-toggle="tab">Blanco y Negro</a></li>
+                    -->
+                    <li class="pull-left header"><i class="fa fa-inbox"></i>&nbsp;Contadores</li>
+                </ul>
+                <!-- <div class="tab-content no-padding"> -->
+                <div class="no-padding">
+                    <!-- Morris chart - Sales -->
+                    <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
+                    <!-- <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div> -->
+                </div>
+            </div>
+            <!-- /.nav-tabs-custom -->
+            <!--# -->
+        </section>
+        <!-- /.Left col -->
+        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+        <section class="col-lg-5 connectedSortable">
+            <!-- Custom tabs (Charts with tabs)-->
+            <div class="nav-tabs-custom">
+                <!-- Tabs within a box -->
+                <ul class="nav nav-tabs pull-right">
+                    <li class="pull-right active"><a href="#VisitMfpChart" data-toggle="tab">Por equipos</a></li>
+                    <li><a href="#VisitTypeChart" data-toggle="tab">Por tipo</a></li>
+                    <li class="pull-left header"><i class="ion ion-navigate"></i>&nbsp;Visitas</li>
+                </ul>
+                <div class="tab-content no-padding">
+                    <!-- Visit MFP box -->
+                    <div class="box box-solid tab-pane active" id="VisitMfpChart">
+                        <!-- <div class="box-header">
+                                tools box - ->
+                            <div class="pull-right box-tools">
+                                <button type="button" class="btn bg-gray-light btn-sm" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn bg-gray-light btn-sm" data-widget="remove">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </div>
+                            <!-- /. tools
+                            <i class="ion ion-navigate"></i>
+                            <h3 class="box-title">
+                                Visitas
+                            </h3>
+                        </div> -->
+
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="chart-responsive">
+                                        <canvas id="pieChart" height="150"></canvas>
+                                    </div>
+                                    <!-- ./chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <ul class="chart-legend clearfix">
+                                        <li><i class="fa fa-circle-o text-red"></i> Entrenamiento</li>
+                                        <li><i class="fa fa-circle-o text-green"></i> Null</li>
+                                        <li><i class="fa fa-circle-o text-yellow"></i> Null</li>
+                                        <li><i class="fa fa-circle-o text-aqua"></i> Atasco</li>
+                                        <li><i class="fa fa-circle-o text-light-blue"></i> Null</li>
+                                        <li><i class="fa fa-circle-o text-gray"></i> Null</li>
+                                    </ul>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer no-padding">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li>
+                                    <a href="#">
+                                        Correspondencia
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">Gestión Humana <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Cooperativa
+                                        <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.footer -->
+                    </div>
+                    <!-- /.box -->
+                    <!-- Visit Type box -->
+                    <div class="box box-solid tab-pane" id="VisitTypeChart">
+                        <!-- <div class="box-header">
+                            tools box - ->
+                            <div class="pull-right box-tools">
+                                <button type="button" class="btn bg-gray-light btn-sm" data-widget="collapse">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn bg-gray-light btn-sm" data-widget="remove">
+                                    <i class="fa fa-times"></i>
+                                </button>
+                            </div>
+                            <!-- /. tools
+                            <i class="ion ion-navigate"></i>
+                            <h3 class="box-title">
+                                Visitas
+                            </h3>
+                        </div> -->
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="chart-responsive">
+                                        <canvas id="pieChart" height="150"></canvas>
+                                    </div>
+                                    <!-- ./chart-responsive -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-4">
+                                    <ul class="chart-legend clearfix">
+                                        <li><i class="fa fa-circle-o text-red"></i> Google</li>
+                                        <li><i class="fa fa-circle-o text-green"></i> Bing</li>
+                                        <li><i class="fa fa-circle-o text-yellow"></i> Duck2Go</li>
+                                        <li><i class="fa fa-circle-o text-aqua"></i> Safari</li>
+                                        <li><i class="fa fa-circle-o text-light-blue"></i> Opera</li>
+                                        <li><i class="fa fa-circle-o text-gray"></i> Navigator</li>
+                                    </ul>
+                                </div>
+                                <!-- /.col -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.box-body -->
+                        <div class="box-footer no-padding">
+                            <ul class="nav nav-pills nav-stacked">
+                                <li>
+                                    <a href="#">
+                                        United States of America
+                                        <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        China
+                                        <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.footer -->
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </div>
+
+            <!-- solid sales graph -->
+            <!-- /.box -->
+        </section>
+        <!-- right col -->
+    </div>
+    <!-- /.row (main row) -->
+    <!--## List PM TODAY-->
+    <div class="row ">
+        <div class="col-lg-12">
+            <div class="nav-tabs-custom">
+                <!-- Tabs within a box -->
+                <ul class="nav nav-tabs pull-right">
+                    <!--
+                        <li class="active"><a href="#revenue-chart" data-toggle="tab">Color</a></li>
+                        <li><a href="#sales-chart" data-toggle="tab">Blanco y Negro</a></li>
+                    -->
+                    <li class="pull-left header"><i class="ion ion-settings"></i>&nbsp;<b>Mantenimientos</b></li>
+                </ul>
+                <div class="no-padding">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="ion ion-ios-gear-outline"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Respon. Social</span>
+                                <span class="info-box-text">MP C306z</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="fa fa-google-plus"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Control de Energia</span>
+                                <span class="info-box-text">MP C2003</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                    <!-- fix for small devices only -->
+                    <div class="clearfix visible-sm-block"></div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="ion ion-ios-cart-outline"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Alinea. Estrategico</span>
+                                <span class="info-box-text">SP 5210</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="ion ion-ios-people-outline"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Financiera</span>
+                                <span class="info-box-text">MP C4503</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="ion ion-ios-cart-outline"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Contraloria</span>
+                                <span class="info-box-text">SP 5210</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="info-box">
+                            <span class="info-box-icon bg-red-active"><i class="ion ion-ios-people-outline"></i></span>
+
+                            <div class="info-box-content">
+                                <span class="info-box-number">Supervisoria Gral.</span>
+                                <span class="info-box-text">MP C306z</span>
+                            </div>
+                            <!-- /.info-box-content -->
+                        </div>
+                        <!-- /.info-box -->
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.content -->
+@section Scripts
+{
+
+}

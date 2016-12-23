@@ -39,12 +39,9 @@ namespace AdminTec.Infraestructure.Repositories
             _context.Entry(entity).State = EntityState.Modified;
         }
 
-        public IEnumerable<T> ToList
+        public IEnumerable<T> ToList()
         {
-            get
-            {
-                return _context.Set<T>();
-            }
+            return _context.Set<T>();
         }
 
         public void SaveAll()

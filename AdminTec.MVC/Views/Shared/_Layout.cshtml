@@ -1,35 +1,39 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard | AdminTech</title>
+    <title>@ViewBag.Title | AdminTech</title>
+
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
     <!-- Bootstrap 3.3.6 -->
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css">
+    @Styles.Render("~/Content/bootstrap")
+
     <!--# Font Awesome -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="~/Content/font-awesome.min.css">
+    @Styles.Render("~/Content/font-awesome")
+
     <!--# Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <!-- Theme style -->
-    <link rel="stylesheet" href="~/Content/AdminLTE.min.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="~/Content/skins/_all-skins.css">
-    <!-- iCheck -->
-    <link rel="stylesheet" href="~/Content/iCheck/flat/blue.css">
+    @Styles.Render("~/Content/AdminLTE")
+
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    @Styles.Render("~/Content/skins")
+
     <!-- Morris chart -->
-    <link rel="stylesheet" href="~/Content/morris.css">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="~/Content/jquery-jvectormap-1.2.2.css">
-    <!-- Date Picker -->
-    <link rel="stylesheet" href="~/Content/datepicker3.min.css">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="~/Content/daterangepicker.css">
-    <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="~/Content/bootstrap3-wysihtml5.min.css">
+    @Styles.Render("~/Content/morris")
+
+    <!-- iCheck -->
+    @Styles.Render("~/Content/iCheck")
+
+    @RenderSection("Styles", false)
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -55,243 +59,16 @@
                 </a>
                 <div class="navbar-custom-menu">
                     <ul class="nav navbar-nav">
-                        @*<!-- Messages: style can be found in dropdown.less-->
-                            <li class="dropdown messages-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-envelope-o"></i>
-                                    <span class="label label-success">4</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 4 messages</li>
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- start message -->
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                        Support Team
-                                                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                            <!-- end message -->
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                        AdminLTE Design Team
-                                                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                        Developers
-                                                        <small><i class="fa fa-clock-o"></i> Today</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                        Sales Department
-                                                        <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <div class="pull-left">
-                                                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                                                    </div>
-                                                    <h4>
-                                                        Reviewers
-                                                        <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                                    </h4>
-                                                    <p>Why not buy a new awesome theme?</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="footer"><a href="#">See All Messages</a></li>
-                                </ul>
-                            </li>
-                            <!-- Notifications: style can be found in dropdown.less -->
-                            <li class="dropdown notifications-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-bell-o"></i>
-                                    <span class="label label-warning">10</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 10 notifications</li>
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu">
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
-                                                    page and may cause design problems
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-users text-red"></i> 5 new members joined
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-user text-red"></i> You changed your username
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="footer"><a href="#">View all</a></li>
-                                </ul>
-                            </li>
-                            <!-- Tasks: style can be found in dropdown.less -->
-                            <li class="dropdown tasks-menu">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-flag-o"></i>
-                                    <span class="label label-danger">9</span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="header">You have 9 tasks</li>
-                                    <li>
-                                        <!-- inner menu: contains the actual data -->
-                                        <ul class="menu">
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Design some buttons
-                                                        <small class="pull-right">20%</small>
-                                                    </h3>
-                                                    <div class="progress xs">
-                                                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">20% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Create a nice theme
-                                                        <small class="pull-right">40%</small>
-                                                    </h3>
-                                                    <div class="progress xs">
-                                                        <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">40% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Some task I need to do
-                                                        <small class="pull-right">60%</small>
-                                                    </h3>
-                                                    <div class="progress xs">
-                                                        <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">60% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                            <li>
-                                                <!-- Task item -->
-                                                <a href="#">
-                                                    <h3>
-                                                        Make beautiful transitions
-                                                        <small class="pull-right">80%</small>
-                                                    </h3>
-                                                    <div class="progress xs">
-                                                        <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                                            <span class="sr-only">80% Complete</span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <!-- end task item -->
-                                        </ul>
-                                    </li>
-                                    <li class="footer">
-                                        <a href="#">View all tasks</a>
-                                    </li>
-                                </ul>
-                            </li>*@
-
                         <!-- User Account: style can be found in dropdown.less -->
-                        <li class="dropdown user user-menu">
+                        <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="fa fa-user"> </i>
-                                <span class="hidden-xs">Dionny Prensa</span>
+                                <span class="hidden-xs">@User.Identity.Name.ToString()</span>
                             </a>
                             <ul class="dropdown-menu">
-                                <!-- User image -->
-                                <li class="user-header">
-                                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                                    <p>
-                                        Dionny Prensa - Web Developer
-                                        <small>Member since Nov. 2012</small>
-                                    </p>
-                                </li>
-                                <!-- Menu Body -->
-                                <li class="user-body">
-                                    <div class="row">
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Followers</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Sales</a>
-                                        </div>
-                                        <div class="col-xs-4 text-center">
-                                            <a href="#">Friends</a>
-                                        </div>
-                                    </div>
-                                    <!-- /.row -->
-                                </li>
-                                <!-- Menu Footer-->
-                                <li class="user-footer">
-                                    <div class="pull-left">
-                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
-                                    </div>
-                                    <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                                    </div>
+                                <li>
+                                    @Html.ActionLink("Perfil", "Profile", "Users", htmlAttributes: new { @class = "btn btn-flat btn-default" })
+                                    @Html.ActionLink("Salir", "LogOut", "Users", htmlAttributes: new { @class = "btn btn-flat btn-default" })
                                 </li>
                             </ul>
                         </li>
@@ -303,6 +80,7 @@
                 </div>
             </nav>
         </header>
+
         <!-- Left side column. contains the logo and sidebar -->
         <aside class="main-sidebar">
             <!-- sidebar: style can be found in sidebar.less -->
@@ -363,29 +141,29 @@
                         </a>
                         <ul class="treeview-menu">
                             <li>
-                                <a href="pages/charts/chartjs.html">
-                                    <i class="ion ion-android-settings"></i> Partes
-                                    <span class="pull-right-container">
-                                        <small class="label pull-right bg-green">2</small>
-                                        <small class="label pull-right bg-red">0</small>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/morris.html">
-                                    <i class="ion ion-paintbucket"></i> Toners
-                                    <span class="pull-right-container">
-                                        <small class="label pull-right bg-green">1</small>
-                                        <small class="label pull-right bg-red">1</small>
-                                    </span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="pages/charts/flot.html">
+                                <a href="@Url.Action("Index", "Equipments")">
                                     <i class="ion ion-printer"></i> Equipos
-                                    <span class="pull-right-container">
-                                        <small class="label pull-right bg-green">0</small>
-                                        <small class="label pull-right bg-red">0</small>
+                                    <span class="pull-right-container" id="UpdateEquipments" name="UpdateEquipments">
+                                        <small class="label pull-right bg-green" id="EquipmentsUsed" name="EquipmentsStock">0</small>
+                                        <small class="label pull-right bg-red" id="EquipmentsStock" name="EquipmentsStock">0</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index", "Toners")">
+                                    <i class="ion ion-paintbucket"></i> Toners
+                                    <span class="pull-right-container" id="UpdateToners" name="UpdateToners">
+                                        <small class="label pull-right bg-green" id="TonersUsed" name="TonersUsed">1</small>
+                                        <small class="label pull-right bg-red" id="TonersStock" name="TonersStock">1</small>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Index", "Parts")">
+                                    <i class="ion ion-android-settings"></i> Partes
+                                    <span class="pull-right-container" id="UpdateParts" name="UpdateParts">
+                                        <small class="label pull-right bg-green" id="PartsUsed" name="PartsUsed">2</small>
+                                        <small class="label pull-right bg-red" id="PartsStock" name="PartsStock">0</small>
                                     </span>
                                 </a>
                             </li>
@@ -449,597 +227,23 @@
             </section>
             <!-- /.sidebar -->
         </aside>
-
         <!-- Content Wrapper. Contains page content -->
+
         <div class="content-wrapper">
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Dashboard
-                    <small>Control panel</small>
+                    @ViewBag.Title
+                    <small>
+                        @ViewBag.SubSection
+                    </small>
                 </h1>
                 <ol class="breadcrumb">
                     <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
                     <li class="active">Dashboard</li>
                 </ol>
             </section>
-            <!-- Main content -->
-            <section class="content">
-                <!-- Small boxes (Stat box) -->
-                <div class="row">
-                    <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-green">
-                            <div class="inner">
-                                <h3><span>76</span></h3>
-                                <p>Toners Restantes</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-paintbucket"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                    <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3><span>7</span></h3>
-                                <p>Proximos cambios de Toner</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-android-sync"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                    <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-yellow">
-                            <div class="inner">
-                                <h3>12</h3>
-                                <p>Proximos PM's</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-settings"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                    <div class="col-lg-3 col-xs-6">
-                        <!-- small box -->
-                        <div class="small-box bg-red-active">
-                            <div class="inner">
-                                <h3>1</h3>
-                                <p>MPF's Detenidas</p>
-                            </div>
-                            <div class="icon">
-                                <i class="ion ion-printer"></i>
-                            </div>
-                            <a href="#" class="small-box-footer">Detalles <i class="fa fa-arrow-circle-right"></i></a>
-                        </div>
-                    </div>
-                    <!-- ./col -->
-                </div>
-                <!-- /.row -->
-                <!-- Main row -->
-                <div class="row">
-                    <!-- Left col -->
-                    <section class="col-lg-7 connectedSortable">
-                        <!-- Custom tabs (Charts with tabs)-->
-                        <div class="nav-tabs-custom">
-                            <!-- Tabs within a box -->
-                            <ul class="nav nav-tabs pull-right">
-                                <!--
-                                    <li class="active"><a href="#revenue-chart" data-toggle="tab">Color</a></li>
-                                    <li><a href="#sales-chart" data-toggle="tab">Blanco y Negro</a></li>
-                                -->
-                                <li class="pull-left header"><i class="fa fa-inbox"></i>&nbsp;Contadores</li>
-                            </ul>
-                            <!-- <div class="tab-content no-padding"> -->
-                            <div class="no-padding">
-                                <!-- Morris chart - Sales -->
-                                <div class="chart tab-pane active" id="revenue-chart" style="position: relative; height: 300px;"></div>
-                                <!-- <div class="chart tab-pane" id="sales-chart" style="position: relative; height: 300px;"></div> -->
-                            </div>
-                        </div>
-                        <!-- /.nav-tabs-custom -->
-                        <!--# -->
-                        @*<div class="row">
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-aqua">
-                                        <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Bookmarks</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-green">
-                                        <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Likes</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-aqua">
-                                        <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Bookmarks</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-green">
-                                        <span class="info-box-icon"><i class="fa fa-thumbs-o-up"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Likes</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-yellow">
-                                        <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Events</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-red">
-                                        <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Comments</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-yellow">
-                                        <span class="info-box-icon"><i class="fa fa-calendar"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Events</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <div class="info-box bg-red">
-                                        <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-text">Comments</span>
-                                            <span class="info-box-number">41,410</span>
-
-                                            <div class="progress">
-                                                <div class="progress-bar" style="width: 70%"></div>
-                                            </div>
-                                            <span class="progress-description">
-                                                70% Increase in 30 Days
-                                            </span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                            </div>*@
-                    </section>
-                    <!-- /.Left col -->
-                    <!-- right col (We are only adding the ID to make the widgets sortable)-->
-                    <section class="col-lg-5 connectedSortable">
-                        <!-- Custom tabs (Charts with tabs)-->
-                        <div class="nav-tabs-custom">
-                            <!-- Tabs within a box -->
-                            <ul class="nav nav-tabs pull-right">
-                                <li class="pull-right active"><a href="#VisitMfpChart" data-toggle="tab">Por equipos</a></li>
-                                <li><a href="#VisitTypeChart" data-toggle="tab">Por tipo</a></li>
-                                <li class="pull-left header"><i class="ion ion-navigate"></i>&nbsp;Visitas</li>
-                            </ul>
-                            <div class="tab-content no-padding">
-                                <!-- Visit MFP box -->
-                                <div class="box box-solid tab-pane active" id="VisitMfpChart">
-                                    <!-- <div class="box-header">
-                                         tools box - ->
-                                        <div class="pull-right box-tools">
-                                            <button type="button" class="btn bg-gray-light btn-sm" data-widget="collapse">
-                                                <i class="fa fa-minus"></i>
-                                            </button>
-                                            <button type="button" class="btn bg-gray-light btn-sm" data-widget="remove">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </div>
-                                        <!-- /. tools
-                                        <i class="ion ion-navigate"></i>
-                                        <h3 class="box-title">
-                                            Visitas
-                                        </h3>
-                                    </div> -->
-
-                                    <div class="box-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="chart-responsive">
-                                                    <canvas id="pieChart" height="150"></canvas>
-                                                </div>
-                                                <!-- ./chart-responsive -->
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-md-4">
-                                                <ul class="chart-legend clearfix">
-                                                    <li><i class="fa fa-circle-o text-red"></i> Entrenamiento</li>
-                                                    <li><i class="fa fa-circle-o text-green"></i> Null</li>
-                                                    <li><i class="fa fa-circle-o text-yellow"></i> Null</li>
-                                                    <li><i class="fa fa-circle-o text-aqua"></i> Atasco</li>
-                                                    <li><i class="fa fa-circle-o text-light-blue"></i> Null</li>
-                                                    <li><i class="fa fa-circle-o text-gray"></i> Null</li>
-                                                </ul>
-                                            </div>
-                                            <!-- /.col -->
-                                        </div>
-                                        <!-- /.row -->
-                                    </div>
-                                    <!-- /.box-body -->
-                                    <div class="box-footer no-padding">
-                                        <ul class="nav nav-pills nav-stacked">
-                                            <li>
-                                                <a href="#">
-                                                    Correspondencia
-                                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Gestión Humana <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    Cooperativa
-                                                    <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.footer -->
-                                </div>
-                                <!-- /.box -->
-                                <!-- Visit Type box -->
-                                <div class="box box-solid tab-pane" id="VisitTypeChart">
-                                    <!-- <div class="box-header">
-                                        tools box - ->
-                                        <div class="pull-right box-tools">
-                                            <button type="button" class="btn bg-gray-light btn-sm" data-widget="collapse">
-                                                <i class="fa fa-minus"></i>
-                                            </button>
-                                            <button type="button" class="btn bg-gray-light btn-sm" data-widget="remove">
-                                                <i class="fa fa-times"></i>
-                                            </button>
-                                        </div>
-                                        <!-- /. tools
-                                        <i class="ion ion-navigate"></i>
-                                        <h3 class="box-title">
-                                            Visitas
-                                        </h3>
-                                    </div> -->
-                                    <div class="box-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <div class="chart-responsive">
-                                                    <canvas id="pieChart" height="150"></canvas>
-                                                </div>
-                                                <!-- ./chart-responsive -->
-                                            </div>
-                                            <!-- /.col -->
-                                            <div class="col-md-4">
-                                                <ul class="chart-legend clearfix">
-                                                    <li><i class="fa fa-circle-o text-red"></i> Google</li>
-                                                    <li><i class="fa fa-circle-o text-green"></i> Bing</li>
-                                                    <li><i class="fa fa-circle-o text-yellow"></i> Duck2Go</li>
-                                                    <li><i class="fa fa-circle-o text-aqua"></i> Safari</li>
-                                                    <li><i class="fa fa-circle-o text-light-blue"></i> Opera</li>
-                                                    <li><i class="fa fa-circle-o text-gray"></i> Navigator</li>
-                                                </ul>
-                                            </div>
-                                            <!-- /.col -->
-                                        </div>
-                                        <!-- /.row -->
-                                    </div>
-                                    <!-- /.box-body -->
-                                    <div class="box-footer no-padding">
-                                        <ul class="nav nav-pills nav-stacked">
-                                            <li>
-                                                <a href="#">
-                                                    United States of America
-                                                    <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    China
-                                                    <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!-- /.footer -->
-                                </div>
-                                <!-- /.box -->
-                            </div>
-                        </div>
-
-                        <!-- solid sales graph -->
-                        <!-- /.box -->
-                        <!-- Calendar -->
-                        @*<div class="box box-solid bg-green-gradient">
-                                <div class="box-header">
-                                    <i class="fa fa-calendar"></i>
-
-                                    <h3 class="box-title">Calendar</h3>
-                                    <!-- tools box -->
-                                    <div class="pull-right box-tools">
-                                        <!-- button with a dropdown -->
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                <i class="fa fa-bars"></i>
-                                            </button>
-                                            <ul class="dropdown-menu pull-right" role="menu">
-                                                <li><a href="#">Add new event</a></li>
-                                                <li><a href="#">Clear events</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">View calendar</a></li>
-                                            </ul>
-                                        </div>
-                                        <button type="button" class="btn btn-success btn-sm" data-widget="collapse">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-success btn-sm" data-widget="remove">
-                                            <i class="fa fa-times"></i>
-                                        </button>
-                                    </div>
-                                    <!-- /. tools -->
-                                </div>
-                                <!-- /.box-header -->
-                                <div class="box-body no-padding">
-                                    <!--The calendar -->
-                                    <div id="calendar" style="width: 100%"></div>
-                                </div>
-                                <!-- /.box-body -->
-                                <div class="box-footer text-black">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <!-- Progress bars -->
-                                            <div class="clearfix">
-                                                <span class="pull-left">Task #1</span>
-                                                <small class="pull-right">90%</small>
-                                            </div>
-                                            <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                                            </div>
-
-                                            <div class="clearfix">
-                                                <span class="pull-left">Task #2</span>
-                                                <small class="pull-right">70%</small>
-                                            </div>
-                                            <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                        <div class="col-sm-6">
-                                            <div class="clearfix">
-                                                <span class="pull-left">Task #3</span>
-                                                <small class="pull-right">60%</small>
-                                            </div>
-                                            <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
-                                            </div>
-
-                                            <div class="clearfix">
-                                                <span class="pull-left">Task #4</span>
-                                                <small class="pull-right">40%</small>
-                                            </div>
-                                            <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
-                                            </div>
-                                        </div>
-                                        <!-- /.col -->
-                                    </div>
-                                    <!-- /.row -->
-                                </div>
-                            </div>*@
-                        <!-- /.box -->
-                    </section>
-                    <!-- right col -->
-                </div>
-                <!-- /.row (main row) -->
-                <!--## List PM TODAY-->
-                <div class="row ">
-                    <div class="col-lg-12">
-                        <div class="nav-tabs-custom">
-                            <!-- Tabs within a box -->
-                            <ul class="nav nav-tabs pull-right">
-                                <!--
-                                    <li class="active"><a href="#revenue-chart" data-toggle="tab">Color</a></li>
-                                    <li><a href="#sales-chart" data-toggle="tab">Blanco y Negro</a></li>
-                                -->
-                                <li class="pull-left header"><i class="ion ion-settings"></i>&nbsp;<b>Mantenimientos</b></li>
-                            </ul>
-                            <div class="no-padding">
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="ion ion-ios-gear-outline"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Respon. Social</span>
-                                            <span class="info-box-text">MP C306z</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="fa fa-google-plus"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Control de Energia</span>
-                                            <span class="info-box-text">MP C2003</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <!-- fix for small devices only -->
-                                <div class="clearfix visible-sm-block"></div>
-
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="ion ion-ios-cart-outline"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Alinea. Estrategico</span>
-                                            <span class="info-box-text">SP 5210</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="ion ion-ios-people-outline"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Financiera</span>
-                                            <span class="info-box-text">MP C4503</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="ion ion-ios-cart-outline"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Contraloria</span>
-                                            <span class="info-box-text">SP 5210</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                    <div class="info-box">
-                                        <span class="info-box-icon bg-red-active"><i class="ion ion-ios-people-outline"></i></span>
-
-                                        <div class="info-box-content">
-                                            <span class="info-box-number">Supervisoria Gral.</span>
-                                            <span class="info-box-text">MP C306z</span>
-                                        </div>
-                                        <!-- /.info-box-content -->
-                                    </div>
-                                    <!-- /.info-box -->
-                                </div>
-                                <!-- /.col -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- /.content -->
+            @RenderBody()
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
@@ -1238,54 +442,72 @@
                 <!-- /.tab-pane -->
             </div>
         </aside>
+
         <!-- /.control-sidebar -->
-        <!-- Add the sidebar's background. This div must be placed
-             immediately after the control sidebar -->
+        <!-- Add the sidebar's background. This div must be
+            placed immediately after the control sidebar -->
         <div class="control-sidebar-bg"></div>
     </div>
-    @RenderBody()
+
     <!-- ./wrapper -->
     <!-- jQuery 2.2.3 -->
-    <script src="~/Scripts/jquery-2.2.3.min.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+
     <!--# jQuery UI 1.11.4 -->
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button);
     </script>
+
+    <!-- AdminLTE App -->
+    <script src="~/Scripts/app.js"></script>
+
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/Scripts/demo.js"></script>
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="~/Scripts/dashboard.js"></script>
+
     <!-- Bootstrap 3.3.6 -->
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <!-- Slimscroll -->
+    @Scripts.Render("~/bundles/jquery-slimscroll")
+
+    <!-- FastClick -->
+    @Scripts.Render("~/bundles/fastclick")
+
     <!-- Morris.js charts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <!-- <script src="~/Scripts/raphael.min.js"></script> -->
-    <script src="~/Scripts/morris.min.js"></script>
+    @Scripts.Render("~/bundles/morris")
+
     <!-- Sparkline -->
-    <script src="~/Scripts/jquery.sparkline.min.js"></script>
+    @Scripts.Render("~/bundles/jquery-sparkline")
+
     <!-- jvectormap -->
-    <script src="~/Scripts/jquery-jvectormap-1.2.2.min.js"></script>
-    <script src="~/Scripts/jquery-jvectormap-world-mill-en.js"></script>
+    @Scripts.Render("~/bundles/jquery-jvectormap")
+
     <!-- jQuery Knob Chart -->
-    <script src="~/Scripts/jquery.knob.min.js"></script>
+    @Scripts.Render("~/bundles/jquery-knob")
+
     <!--# daterangepicker -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script> -->
-    <script src="~/Scripts/moment.min.js"></script>
-    <script src="~/Scripts/daterangepicker.js"></script>
+    @Scripts.Render("~/bundles/moment")
+    @Scripts.Render("~/bundles/daterangepicker")
+
     <!-- datepicker -->
+    @Scripts.Render("~/bundles/bootstrap-datepicker")
     <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+
     <!-- Bootstrap WYSIHTML5 -->
-    <script src="~/Scripts/bootstrap3-wysihtml5.all.min.js"></script>
-    <!-- Slimscroll -->
-    <script src="~/Scripts/jquery.slimscroll.min.js"></script>
-    <!-- FastClick -->
-    <script src="~/Scripts/fastclick.js"></script>
+    @Scripts.Render("~/bundles/bootstrap3-wysihtml5")
+
     <!-- ChartJS -->
-    <script src="~/Scripts/Chart.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="~/Scripts/app.min.js"></script>
-    <!-- AdminLTE for demo purposes -->
-    <script src="~/Scripts/demo.js"></script>
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <!-- <script src="~/Scripts/dashboard.js"></script> -->
-    <script src="~/Scripts/dashboard.js"></script>
+    @Scripts.Render("~/bundles/Chart")
+
+    @RenderSection("scripts", false)
 </body>
 </html>

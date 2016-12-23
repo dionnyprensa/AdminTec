@@ -2,7 +2,7 @@
 
 namespace AdminTec.Domain.Interfaces
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T>
     {
         void Add(T entity);
 
@@ -14,6 +14,6 @@ namespace AdminTec.Domain.Interfaces
 
         T FindById(int id);
 
-        IEnumerable<T> ToList { get; }
+        IEnumerable<T> ToList();
     }
 }

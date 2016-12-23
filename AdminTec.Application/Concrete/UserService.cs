@@ -2,7 +2,10 @@
 using AdminTec.Application.Validators;
 using AdminTec.Domain.Entities;
 using AdminTec.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
 namespace AdminTec.Application.Concrete
 {
@@ -15,12 +18,9 @@ namespace AdminTec.Application.Concrete
             _repository = Repository;
         }
 
-        public IEnumerable<User> ToList
+        public IEnumerable<User> ToList()
         {
-            get
-            {
-                return _repository.ToList;
-            }
+            return _repository.ToList();
         }
 
         public void Add(User entity)
@@ -68,6 +68,54 @@ namespace AdminTec.Application.Concrete
             }
 
             return errors;
+        }
+
+        public User SignIn(string username, string pass)
+        {
+            var users = ToList().ToList();
+
+            if (users != null)
+            {
+                foreach (var user in users)
+                {
+                    if (user.UserName == username)
+                        if (Decrypt(pass, user.Password))
+                            return user;
+                }
+            }
+
+            return null;
+        }
+
+        public string Encrypt(string pass)
+        {
+            byte[] passToBytes = Encoding.UTF8.GetBytes(pass);
+            string BytesToEncrypt = Convert.ToBase64String(passToBytes);
+
+            BytesToEncrypt = BytesToEncrypt.Replace("+", "A");
+            BytesToEncrypt = BytesToEncrypt.Replace(@"\", "B");
+            BytesToEncrypt = BytesToEncrypt.Replace(@"/", "C");
+
+            passToBytes = Encoding.UTF8.GetBytes(BytesToEncrypt);
+            BytesToEncrypt += Convert.ToBase64String(passToBytes);
+            
+            return BytesToEncrypt;
+        }
+
+        public bool Decrypt(string passLogin, string passDb)
+        {
+            /*
+            byte[] DecryptBytes = Convert.FromBase64String(passDb);
+            string DecryptedText = Encoding.UTF8.GetString(DecryptBytes);
+
+            DecryptedText = DecryptedText.Replace("A", "+");
+            DecryptedText = DecryptedText.Replace("B", @"\");
+            DecryptedText = DecryptedText.Replace("B", @"/");
+
+            return DecryptedText == Encrypt(passLogin) ? true : false;
+             */
+
+            return passDb == Encrypt(passLogin) ? true : false;
         }
     }
 }

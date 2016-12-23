@@ -82,6 +82,10 @@
       <Project>{75AA6F29-0628-472C-90E7-926A8CCA71FC}</Project>
       <Name>AdminTec.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\AdminTec.Infraestructure\AdminTec.Infraestructure.csproj">
+      <Project>{8cd0086d-2680-4fc0-abc0-e8d43c2ceb5f}</Project>
+      <Name>AdminTec.Infraestructure</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

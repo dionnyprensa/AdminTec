@@ -21,7 +21,6 @@ namespace AdminTec.Infraestructure.Configurations
                 .IsRequired();
 
             Property(u => u.Password)
-                .HasMaxLength(16)
                 .IsRequired();
 
             Property(u => u.RememberMe)

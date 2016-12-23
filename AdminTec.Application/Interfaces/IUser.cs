@@ -1,9 +1,9 @@
 ﻿using AdminTec.Domain.Entities;
-using AdminTec.Domain.Interfaces;
 
 namespace AdminTec.Application.Interfaces
 {
-    public interface IUser : IRepository<User>, IAppService<User>
+    public interface IUser : IAppService<User>
     {
+        User SignIn(string username, string pass);
     }
 }

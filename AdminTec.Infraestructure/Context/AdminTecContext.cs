@@ -20,7 +20,8 @@ namespace AdminTec.Infraestructure.Context
 
         public AdminTecContext() : base("AdminTecMSSQL")
         {
-            Database.SetInitializer(new DropCreateDatabaseAlways<AdminTecContext>());
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<AdminTecContext>());
+            Database.SetInitializer(new AdminTecInitializer());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

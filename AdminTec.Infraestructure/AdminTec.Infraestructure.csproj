@@ -98,6 +98,7 @@
     <Compile Include="Configurations\UserConfig.cs" />
     <Compile Include="Configurations\VisitConfig.cs" />
     <Compile Include="Context\AdminTecContext.cs" />
+    <Compile Include="Context\AdminTecInitializer.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\PartRepository.cs" />

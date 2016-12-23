@@ -1,9 +1,8 @@
 ﻿using AdminTec.Domain.Entities;
-using AdminTec.Domain.Interfaces;
 
 namespace AdminTec.Application.Interfaces
 {
-    public interface ITechnician : IRepository<Technician>, IAppService<Technician>
+    public interface ITechnician : IAppService<Technician>
     {
     }
 }
